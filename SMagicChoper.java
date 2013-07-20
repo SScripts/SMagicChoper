@@ -137,8 +137,8 @@ public class SMagicChoper extends ActiveScript implements MouseListener,PaintLis
                 g.setFont(Cons.font1);
                 g.drawString("" + Vars.Status,276,414);
                 g.drawString("" + Vars.runTime.toElapsedString(), 82, 444);
-                g.drawString("" + (Skills.getExperience(Skills.WOODCUTTING)-Vars.StartEXP), 431, 447);
-                g.drawString("" + (getPerHour(Skills.getExperience(Skills.WOODCUTTING)-Vars.StartEXP)), 431, 472);
+                g.drawString("" + (getPerHour(Skills.getExperience(Skills.WOODCUTTING)-Vars.StartEXP)),431, 447);
+                g.drawString("" + (((Skills.getExperience(Skills.WOODCUTTING)-Vars.StartEXP)/250)*Vars.Gold), 296, 466);
                 g.drawString("" + (((Skills.getExperience(Skills.WOODCUTTING)-Vars.StartEXP)/250)*Vars.Gold), 296, 466);
                 g.drawString("" + ((getPerHour(Skills.getExperience(Skills.WOODCUTTING)-Vars.StartEXP)/250)*Vars.Gold),300,488);
                 g.drawString("" + ((Skills.getExperience(Skills.WOODCUTTING) - Vars.StartEXP)/250),80,470);
